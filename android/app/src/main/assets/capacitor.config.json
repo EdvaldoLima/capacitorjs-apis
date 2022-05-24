@@ -1,0 +1,6 @@
+{
+	"appId": "com.capapis.br",
+	"appName": "cap-apis",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
