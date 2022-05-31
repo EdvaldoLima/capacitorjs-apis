@@ -13,7 +13,8 @@ export default {
   data() {
     return{
       apis: [
-        { title:  "Geolocation", page: "geolocation" }
+        { title:  "Geolocation", page: "geolocation" },
+        { title:  "Camera", page: "camera" }
       ]
     }
   }
