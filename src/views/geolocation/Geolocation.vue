@@ -1,16 +1,21 @@
 <template>
   <div>
-    <div>
-      <strong>latitude:</strong> {{ coordinates.latitude }}
-      <strong>longitude:</strong> {{ coordinates.longitude }} 
-      <strong>altitude:</strong> {{ coordinates.altitude }} 
-      <strong>accuracy:</strong> {{ coordinates.accuracy }} 
-      <strong>altitudeAccuracy:</strong> {{ coordinates.altitudeAccuracy }} 
-      <strong>heading:</strong> {{ coordinates.heading }} 
+    <br>
+    <div v-if="loading">
+      Carregando...
+    </div>
+    <div v-else>
+      <strong>latitude:</strong> {{ coordinates.latitude }} <br>
+      <strong>longitude:</strong> {{ coordinates.longitude }} <br>
+      <strong>altitude:</strong> {{ coordinates.altitude }} <br>
+      <strong>accuracy:</strong> {{ coordinates.accuracy }} <br>
+      <strong>altitudeAccuracy:</strong> {{ coordinates.altitudeAccuracy }} <br>
+      <strong>heading:</strong> {{ coordinates.heading }} <br>
       <strong>speed:</strong> {{ coordinates.speed }}
     </div>
+    <br>
     <div>
-      <l-map style="height:100vh" :zoom="zoom" :center="center">
+      <l-map style="height:50vh" :zoom="zoom" :center="center">
         <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
         <l-marker :lat-lng="markerLatLng"></l-marker>
       </l-map>
@@ -31,6 +36,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       coordinates: {},
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution:
@@ -46,12 +52,11 @@ export default {
       this.coordinates = coords
       this.markerLatLng = [this.coordinates.latitude, this.coordinates.longitude]
       this.center = [this.coordinates.latitude, this.coordinates.longitude]
+      this.loading = false
     }
   },
   mounted(){
-    // setInterval(() => {
-      this.getGeolocation()
-    // }, 1000)
+    this.getGeolocation()
   }
 }
 </script>
