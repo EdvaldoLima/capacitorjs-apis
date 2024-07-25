@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">capjs-plugins</string>
+    <string name="title_activity_main">capjs-plugins</string>
+    <string name="package_name">com.capjsplugins.br</string>
+    <string name="custom_url_scheme">com.capjsplugins.br</string>
+</resources>
