@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import './assets/scss/main.scss'
 import App from './App.vue'
+import usePlugins from './plugins'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+usePlugins(app)
+
+app.mount('#app')

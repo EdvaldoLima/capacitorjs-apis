@@ -4,16 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "android": "vue-tsc -b && vite build && npx cap sync && npx cap run android"
   },
   "dependencies": {
+    "@capacitor/action-sheet": "^6.0.1",
     "@capacitor/android": "^6.1.1",
     "@capacitor/core": "^6.1.1",
-    "vue": "^3.4.31"
+    "remixicon": "^4.3.0",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^6.1.1",
@@ -26,6 +29,7 @@
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.17.0",
     "unplugin-vue-components": "^0.27.3",
+    "unplugin-vue-router": "^0.10.1",
     "vite": "^5.3.4",
     "vue-tsc": "^2.0.24"
   }

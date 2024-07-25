@@ -1,4 +1,29 @@
-*{
+@import "remixicon/fonts/remixicon.css";
+
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100vh;
+  background: var(--surface);
+}
+
+$colors: (
+  "blue": #050c9c,
+  "surface": #eeeeee,
+);
+
+@each $name, $color in $colors {
+  :root {
+    --#{$name}: #{$color};
+  }
+
+  .text-#{$name} {
+    color: #{$color};
+  }
 }
