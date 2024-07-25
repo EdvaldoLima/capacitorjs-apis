@@ -41,6 +41,11 @@
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-6.1.1.tgz#a0843ddea92cc9739739a82a8fcd2ed6b1eaab8a"
   integrity sha512-rhO/nH6NJizGV5KizoIoGxCmkos3HnyUzI9TNv8IVy/C8h6lPM5Gt9cxGclb6k0OBTtgv6iJVo654+m4kzv0Qg==
 
+"@capacitor/app-launcher@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/app-launcher/-/app-launcher-6.0.1.tgz#2802a002413529b67ba910f54adcacccedf988f2"
+  integrity sha512-Nq4igYhGhF/71juGao5j+ezoSdNcomu1BUPtPkJy+lqyzNSXoRagF8q14hHWsUFHvngHcohNvrYJftZ45CEReQ==
+
 "@capacitor/cli@^6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-6.1.1.tgz#ff8423fef26572ba73177c62c8677e77968fc4c6"
