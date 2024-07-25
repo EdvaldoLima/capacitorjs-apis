@@ -11,6 +11,7 @@
   &__body {
     // min-height: 70%;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
