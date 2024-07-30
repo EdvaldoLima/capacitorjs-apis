@@ -9,7 +9,6 @@
 <style lang="scss" scoped>
 .page{
   &__body {
-    // min-height: 70%;
     display: flex;
     gap: 1rem;
     flex-direction: column;

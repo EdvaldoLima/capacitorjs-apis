@@ -23,6 +23,14 @@ const plugins: Array<PluginsList> = [
     toPage: "/app-launcher",
     documentation: "",
   },
+  {
+    title: "App",
+    plugin: "@capacitor/app",
+    description:
+      "The App API handles high level App state and events. For example, this API emits events when the app enters and leaves the foreground, handles deeplinks, opens other apps, and manages persisted plugin state.",
+    toPage: "/app",
+    documentation: "",
+  },
 ];
 
 export default plugins;

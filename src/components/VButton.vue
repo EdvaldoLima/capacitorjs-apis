@@ -13,4 +13,8 @@
   min-width: 2.5rem;
   min-height: 2.5rem;
 }
+
+.button:active{
+  opacity: 0.5;
+}
 </style>
