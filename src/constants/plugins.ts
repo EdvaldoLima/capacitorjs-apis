@@ -13,7 +13,7 @@ const plugins: Array<PluginsList> = [
     description:
       "The Action Sheet API provides access to native Action Sheets, which come up from the bottom of the screen and display actions a user can take.",
     toPage: "/action-sheet",
-    documentation: "",
+    documentation: "https://capacitorjs.com/docs/apis/action-sheet",
   },
   {
     title: "App Launcher",
@@ -21,7 +21,7 @@ const plugins: Array<PluginsList> = [
     description:
       "The AppLauncher API allows your app to check if an app can be opened and open it.",
     toPage: "/app-launcher",
-    documentation: "",
+    documentation: "https://capacitorjs.com/docs/apis/app-launcher",
   },
   {
     title: "App",
@@ -29,7 +29,15 @@ const plugins: Array<PluginsList> = [
     description:
       "The App API handles high level App state and events. For example, this API emits events when the app enters and leaves the foreground, handles deeplinks, opens other apps, and manages persisted plugin state.",
     toPage: "/app",
-    documentation: "",
+    documentation: "https://capacitorjs.com/docs/apis/app",
+  },
+  {
+    title: "Browser",
+    plugin: "@capacitor/browser",
+    description:
+      "The Browser API provides the ability to open an in-app browser and subscribe to browser events.",
+    toPage: "/browser",
+    documentation: "https://capacitorjs.com/docs/apis/browser",
   },
 ];
 

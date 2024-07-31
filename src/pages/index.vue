@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { openBrowserURL } from "@/plugins/capacitorjs";
 import plugins from "@/constants/plugins";
 
 // Methods
@@ -29,7 +30,7 @@ import plugins from "@/constants/plugins";
               <i class="ri-eye-line"></i>
             </VButton>
           </router-link>
-          <VButton>
+          <VButton @click="openBrowserURL(plugin.documentation)">
             <i class="ri-plug-line"></i>
           </VButton>
         </div>
