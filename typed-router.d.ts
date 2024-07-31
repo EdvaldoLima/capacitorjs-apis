@@ -22,5 +22,6 @@ declare module 'vue-router/auto-routes' {
     '/action-sheet/': RouteRecordInfo<'/action-sheet/', '/action-sheet', Record<never, never>, Record<never, never>>,
     '/app/': RouteRecordInfo<'/app/', '/app', Record<never, never>, Record<never, never>>,
     '/app-launcher/': RouteRecordInfo<'/app-launcher/', '/app-launcher', Record<never, never>, Record<never, never>>,
+    '/browser/': RouteRecordInfo<'/browser/', '/browser', Record<never, never>, Record<never, never>>,
   }
 }
