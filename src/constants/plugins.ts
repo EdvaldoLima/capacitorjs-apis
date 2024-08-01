@@ -39,6 +39,14 @@ const plugins: Array<PluginsList> = [
     toPage: "/browser",
     documentation: "https://capacitorjs.com/docs/apis/browser",
   },
+  {
+    title: "Camera",
+    plugin: "@capacitor/camera",
+    description:
+      "The Camera API provides the ability to take a photo with the camera or choose an existing one from the photo album.",
+    toPage: "/camera",
+    documentation: "https://capacitorjs.com/docs/apis/camera",
+  },
 ];
 
 export default plugins;

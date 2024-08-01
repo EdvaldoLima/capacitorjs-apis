@@ -23,5 +23,6 @@ declare module 'vue-router/auto-routes' {
     '/app/': RouteRecordInfo<'/app/', '/app', Record<never, never>, Record<never, never>>,
     '/app-launcher/': RouteRecordInfo<'/app-launcher/', '/app-launcher', Record<never, never>, Record<never, never>>,
     '/browser/': RouteRecordInfo<'/browser/', '/browser', Record<never, never>, Record<never, never>>,
+    '/camera/': RouteRecordInfo<'/camera/', '/camera', Record<never, never>, Record<never, never>>,
   }
 }
