@@ -2,7 +2,7 @@ interface PluginsList {
   title: string;
   plugin: string;
   description: string;
-  toPage: string;
+  toPage?: string;
   documentation: string;
 }
 
@@ -32,12 +32,34 @@ const plugins: Array<PluginsList> = [
     documentation: "https://capacitorjs.com/docs/apis/app",
   },
   {
+    title: "Background Runner",
+    plugin: "@capacitor/background-runner",
+    description:
+      "Background Runner provides an event-based standalone JavaScript environment for executing your Javascript code outside of the web view.",
+    documentation: "https://capacitorjs.com/docs/apis/background-runner",
+  },
+  {
+    title: "Barcode Scanner",
+    plugin: "@capacitor/barcode-scanner",
+    description:
+      "Capacitor plugin using Outsystems Barcode libs",
+    documentation: "https://capacitorjs.com/docs/apis/barcode-scanner",
+  },
+  {
     title: "Browser",
     plugin: "@capacitor/browser",
     description:
       "The Browser API provides the ability to open an in-app browser and subscribe to browser events.",
     toPage: "/browser",
     documentation: "https://capacitorjs.com/docs/apis/browser",
+  },
+  {
+    title: "Camera",
+    plugin: "@capacitor/camera",
+    description:
+      "The Camera API provides the ability to take a photo with the camera or choose an existing one from the photo album.",
+    toPage: "/camera",
+    documentation: "https://capacitorjs.com/docs/apis/camera",
   },
 ];
 

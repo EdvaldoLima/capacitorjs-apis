@@ -25,7 +25,7 @@ import plugins from "@/constants/plugins";
 
       <template #footer>
         <div class="footer">
-          <router-link :to="plugin.toPage">
+          <router-link v-if="plugin.toPage" :to="plugin.toPage">
             <VButton>
               <i class="ri-eye-line"></i>
             </VButton>
