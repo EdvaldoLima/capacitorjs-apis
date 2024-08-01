@@ -2,7 +2,7 @@ interface PluginsList {
   title: string;
   plugin: string;
   description: string;
-  toPage: string;
+  toPage?: string;
   documentation: string;
 }
 
@@ -30,6 +30,20 @@ const plugins: Array<PluginsList> = [
       "The App API handles high level App state and events. For example, this API emits events when the app enters and leaves the foreground, handles deeplinks, opens other apps, and manages persisted plugin state.",
     toPage: "/app",
     documentation: "https://capacitorjs.com/docs/apis/app",
+  },
+  {
+    title: "Background Runner",
+    plugin: "@capacitor/background-runner",
+    description:
+      "Background Runner provides an event-based standalone JavaScript environment for executing your Javascript code outside of the web view.",
+    documentation: "https://capacitorjs.com/docs/apis/background-runner",
+  },
+  {
+    title: "Barcode Scanner",
+    plugin: "@capacitor/barcode-scanner",
+    description:
+      "Capacitor plugin using Outsystems Barcode libs",
+    documentation: "https://capacitorjs.com/docs/apis/barcode-scanner",
   },
   {
     title: "Browser",
