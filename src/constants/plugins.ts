@@ -61,6 +61,14 @@ const plugins: Array<PluginsList> = [
     toPage: "/camera",
     documentation: "https://capacitorjs.com/docs/apis/camera",
   },
+  {
+    title: "Clipboard",
+    plugin: "@capacitor/clipboard",
+    description:
+      "The Clipboard API enables copy and pasting to/from the system clipboard.",
+    toPage: "/clipboard",
+    documentation: "https://capacitorjs.com/docs/apis/clipboard",
+  },
 ];
 
 export default plugins;
