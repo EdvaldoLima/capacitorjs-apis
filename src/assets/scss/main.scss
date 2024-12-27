@@ -1,4 +1,7 @@
-@import "remixicon/fonts/remixicon.css";
+@import "icons";
+@import "colors";
+@import "variables";
+@import "text";
 
 * {
   padding: 0;
@@ -13,17 +16,3 @@ body,
   background: var(--surface);
 }
 
-$colors: (
-  "blue": #050c9c,
-  "surface": #eeeeee,
-);
-
-@each $name, $color in $colors {
-  :root {
-    --#{$name}: #{$color};
-  }
-
-  .text-#{$name} {
-    color: #{$color};
-  }
-}
